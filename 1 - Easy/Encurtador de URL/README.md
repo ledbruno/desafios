@@ -40,4 +40,4 @@ No exemplo acima http://localhost:8081/abc123ab só poderia haver um redireciona
 - Rodar o projeto com o mínimo de configuração/setup. Gostamos de projetos que rodam de forma simples e rápida.
 - Hospedar o serviço na nuvem. Ex: heroku, aws, azuere, o que preferir
 - Configurar monitoramento e log. Ex: logdna, newRelic. Se fizer isso, coloque na documentação.
-- Se sua solução estivesse apta para rodar em várias nós/instâncias. Stateless please.
+- Se sua solução estivesse apta para rodar em vários nós/instâncias. Stateless please.
