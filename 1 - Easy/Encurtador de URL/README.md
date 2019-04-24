@@ -3,7 +3,7 @@ Encurtador de URLs
 
 Seu serviço irá receber inicialmente como parâmetro uma URL que deverá ser encurtada seguindo as seguintes regras:
 
-1. Mínimo de 5 e máximo de 10 caracteres.
+1. Mínimo de 5 e máximo de 36 caracteres.
 
 2. Apenas letras e números. 
 
