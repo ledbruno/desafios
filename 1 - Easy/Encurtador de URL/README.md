@@ -25,7 +25,7 @@ Não pode haver colisão de urls encurtadas. No exemplo acima http://localhost:8
 
 #### O que será avaliado
 - Cobertura de testes: é esperado que você saiba criar testes automatizados para o seu código. Ex: unitários e integração
-- Performance: conforme você vai encurtando urls pode ficar mais dificil verificar colisões. Procure soluções que tenham de resposta mais constante.
+- Performance: conforme você vai encurtando urls pode ficar mais dificil verificar colisões. Procure soluções que tenham tempo de resposta mais constante.
 - Qualidade de código: Clean Code, SOLID e Design Patterns
 
 ### Premissas/dicas
