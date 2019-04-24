@@ -33,7 +33,7 @@ No exemplo acima http://localhost:8081/abc123ab só poderia haver um redireciona
 ### Premissas/dica
 - Stack: preferencialmente Java + Springboot. Mas se realmente não estiver confortável com essa stack use outra. Justifique sua decisão.
 - Banco de dados: pode ser em memória ou usar uma imagem docker com uma instância do banco de sua preferência, como preferir. 
-- Documentação: queremos apenas saber como rodar e testar seu projeto (ex: wiki/readme no github). Não precisa documentar código.
+- Documentação: queremos apenas saber como rodar seu projeto (ex: wiki/readme no github). Não precisa documentar código.
 - Repositório: crie um repo no github e coloque o fonte lá. Não precisa forkar esse repo, pode ser um repo novo.
 
 ### O que seria legal
