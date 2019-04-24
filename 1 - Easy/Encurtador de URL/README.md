@@ -38,3 +38,4 @@ Não pode haver colisão de urls encurtadas. No exemplo acima http://localhost:8
 - Rodar o projeto com o mínimo de configuração/setup. Gostamos de projetos que rodam de forma simples e rápida.
 - Plus: hospedar isso em um serviço gratuito na nuvem. Ex: heroku, aws..etc:
 - Configurar monitoramento e log. Ex: logdna, newRelic. Se fizer isso, coloque na documentação.
+- Se sua solução estivesse apta para rodar em várias nós/instâncias. Stateless please.
