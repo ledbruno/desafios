@@ -18,7 +18,9 @@ A url retornada deverá ser salva no banco de dados e possui prazo de validade (
 } 
 ```
 
-Não pode haver colisão de urls encurtadas. No exemplo acima http://localhost:8081/abc123ab só pode redirecionar para zambas.com.br, enquanto estiver válida (não expirada). Após o período de expiração outro host pode ser apontado por essa url encurtada.
+Não pode haver colisão de urls encurtadas. Isso quer dizer que a probabilidade de colisão tem que ser zero ou insignificante
+
+No exemplo acima http://localhost:8081/abc123ab só poderia haver um redirecionamento para zambas.com.br, enquanto estiver válida (não expirada). Após o período de expiração outro host pode ser apontado por essa url encurtada.
 
 #### Exemplo ao redirecionar
 - Ao receber uma chamada para `http://localhost:8081/abc123ab` você irá retorna um redirecionamento para a url salva no banco (`zambas.com.br`), caso não seja encontrada, retornar HTTP 404. Caso tenha expirado HTTP 410.
