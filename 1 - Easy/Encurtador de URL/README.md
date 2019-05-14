@@ -1,6 +1,9 @@
 Encurtador de URLs
 ===========================
 
+Criar um serviço capaz de encurtar e atender requisições em urls encurtadas (redirecionamento)
+
+## Encurtamento
 Seu serviço irá receber inicialmente como parâmetro uma URL que deverá ser encurtada seguindo as seguintes regras:
 
 1. Mínimo de 5 e máximo de 36 caracteres.
@@ -22,7 +25,7 @@ Não pode haver colisão de urls encurtadas. Isso quer dizer que a probabilidade
 
 ## Redirecionamento
 
-Seu app, deve ser capaz de redirecionar chamadas GET para urls encurtadas. Seguindo o exemplo da url encurtada anteriormente:
+Seu app deve ser capaz de redirecionar chamadas GET para urls encurtadas. Seguindo o exemplo da url encurtada anteriormente:
 
 GET  `http://localhost:8081/abc123ab` => GET `http://www.zambas.com.br`
 
