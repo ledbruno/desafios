@@ -10,7 +10,7 @@ Seu serviço irá receber inicialmente como parâmetro uma URL que deverá ser e
 A url retornada deverá ser salva no banco de dados e possui prazo de validade (você poderá escolher quanto tempo) e ao receber uma url encurtada, deverá fazer o redirecionamento para a url salva no banco.
 
 #### Exemplo ao encurtar
-- Seu sitema recebe uma chamada para encurtar a url `zambas.com.br` e retorna o seguinte json
+- Seu sitema recebe uma chamada para encurtar a url `http://www.zambas.com.br` e retorna o seguinte json
 
 ``` 
 { 
@@ -20,10 +20,17 @@ A url retornada deverá ser salva no banco de dados e possui prazo de validade (
 
 Não pode haver colisão de urls encurtadas. Isso quer dizer que a probabilidade de colisão tem que ser zero ou insignificante
 
-No exemplo acima http://localhost:8081/abc123ab só poderia haver um redirecionamento para zambas.com.br, enquanto estiver válida (não expirada). Após o período de expiração outro host pode ser apontado por essa url encurtada.
+## Redirecionamento
+
+Seu app, deve ser capaz de redirecionar chamadas GET para urls encurtadas. Seguindo o exemplo da url encurtada anteriormente:
+
+GET  `http://localhost:8081/abc123ab` => GET `http://www.zambas.com.br`
 
 #### Exemplo ao redirecionar
-- Ao receber uma chamada para `http://localhost:8081/abc123ab` você irá retorna um redirecionamento para a url salva no banco (`zambas.com.br`), caso não seja encontrada, retornar HTTP 404. Caso tenha expirado HTTP 410.
+- Ao receber uma chamada GET para `http://localhost:8081/abc123ab` você irá retorna um redirecionamento GET para a url salva no banco (`http://www.zambas.com.br`), caso não seja encontrada, retornar HTTP 404. Caso tenha expirado HTTP 410.
+
+**OBS:**
+No exemplo acima http://localhost:8081/abc123ab só poderia haver um redirecionamento para zambas.com.br, enquanto estiver válida (não expirada). Após o período de expiração outro host pode ser apontado por essa url encurtada.
 
 #### O que será avaliado
 - Cobertura de testes: é esperado que você saiba criar testes automatizados para o seu código. Ex: unitários e integração
