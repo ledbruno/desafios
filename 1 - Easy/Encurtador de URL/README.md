@@ -10,14 +10,15 @@ Seu serviço irá receber inicialmente como parâmetro uma URL que deverá ser e
 
 2. Apenas letras e números. 
 
-A url retornada deverá ser salva no banco de dados e possui prazo de validade (você poderá escolher quanto tempo) e ao receber uma url encurtada, deverá fazer o redirecionamento para a url salva no banco.
+A url retornada deverá ser salva no banco de dados e possui prazo de validade. Você poderá escolher quanto tempo (em dias, horas,etc...) uma URL dura após a sua criação. Esse tempo de expiração pode ser uma constante no APP/banco, ou então até configurável via API, fica a seu critério como faze-lo.
 
 #### Exemplo ao encurtar
 - Seu sitema recebe uma chamada para encurtar a url `http://www.zambas.com.br` e retorna o seguinte json
 
 ``` 
 { 
-  newUrl: "http://localhost:8081/abc123ab";
+  newUrl: "http://localhost:8081/abc123ab",
+  expiresAt: "3423423424"
 } 
 ```
 
